@@ -33,11 +33,11 @@ I ran the above batch file in ~10 simultaneous instances over the period of 5 ho
 
 First errors that show up:
 
-[consul-v0.6.4/soaktest/crashed-instances/consul-1/conf/consul-firsterrors.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/conf/consul-firsterrors.log)
+[consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log)
 
 On reboot, database cannot be resized and consul cannot elect a leader.
 
-[consul-v0.6.4/soaktest/crashed-instances/consul-1/conf/consul-firsterrors.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/conf/consul.log)
+[consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log)
 
 
 ### Potential fix
