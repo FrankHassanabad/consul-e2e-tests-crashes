@@ -1,0 +1,40 @@
+==> WARNING: BootstrapExpect Mode is specified as 1; this is the same as Bootstrap mode.
+==> WARNING: Bootstrap mode enabled! Do not enable unless necessary
+==> WARNING: Windows is not recommended as a Consul server. Do not use in production.
+==> Starting Consul agent...
+==> Starting Consul agent RPC...
+==> Consul agent running!
+         Node name: 'frankhassanabad'
+        Datacenter: 'dc1'
+            Server: true (bootstrap: true)
+       Client Addr: 127.0.0.1 (HTTP: 8500, HTTPS: -1, DNS: -1, RPC: 8401)
+      Cluster Addr: 192.168.253.10 (LAN: 8304, WAN: 8305)
+    Gossip encrypt: false, RPC-TLS: false, TLS-Incoming: false
+             Atlas: <disabled>
+
+==> Log data will now stream in as it occurs:
+
+    2016/07/25 08:03:30 [INFO] raft: Restored from snapshot 2-188570-1469454199483
+    2016/07/25 08:03:30 [INFO] raft: Node at 192.168.253.10:8303 [Follower] entering Follower state
+    2016/07/25 08:03:30 [INFO] serf: EventMemberJoin: frankhassanabad 192.168.253.10
+    2016/07/25 08:03:30 [INFO] serf: EventMemberJoin: frankhassanabad.dc1 192.168.253.10
+    2016/07/25 08:03:30 [INFO] consul: adding LAN server frankhassanabad (Addr: 192.168.253.10:8303) (DC: dc1)
+    2016/07/25 08:03:30 [INFO] consul: adding WAN server frankhassanabad.dc1 (Addr: 192.168.253.10:8303) (DC: dc1)
+    2016/07/25 08:03:30 [ERR] agent: failed to sync remote state: No cluster leader
+    2016/07/25 08:03:32 [WARN] raft: Heartbeat timeout reached, starting election
+    2016/07/25 08:03:32 [INFO] raft: Node at 192.168.253.10:8303 [Candidate] entering Candidate state
+    2016/07/25 08:03:32 [INFO] raft: Election won. Tally: 1
+    2016/07/25 08:03:32 [INFO] raft: Node at 192.168.253.10:8303 [Leader] entering Leader state
+    2016/07/25 08:03:32 [INFO] raft: Disabling EnableSingleNode (bootstrap)
+    2016/07/25 08:03:32 [INFO] consul: cluster leadership acquired
+    2016/07/25 08:03:32 [INFO] consul: New leader elected: frankhassanabad
+    2016/07/25 08:03:34 [INFO] agent: Synced node info
+==> Caught signal: interrupt
+==> Gracefully shutting down agent...
+    2016/07/25 08:03:57 [INFO] consul: server starting leave
+    2016/07/25 08:03:57 [INFO] serf: EventMemberLeave: frankhassanabad.dc1 192.168.253.10
+    2016/07/25 08:03:57 [INFO] serf: EventMemberLeave: frankhassanabad 192.168.253.10
+    2016/07/25 08:03:57 [INFO] agent: requesting shutdown
+    2016/07/25 08:03:57 [INFO] consul: shutting down server
+    2016/07/25 08:03:57 [INFO] consul: removing WAN server frankhassanabad.dc1 (Addr: 192.168.253.10:8303) (DC: dc1)
+    2016/07/25 08:03:57 [INFO] agent: shutdown complete

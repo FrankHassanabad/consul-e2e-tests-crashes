@@ -1,0 +1,125 @@
+==> WARNING: BootstrapExpect Mode is specified as 1; this is the same as Bootstrap mode.
+==> WARNING: Bootstrap mode enabled! Do not enable unless necessary
+==> WARNING: Windows is not recommended as a Consul server. Do not use in production.
+==> Starting Consul agent...
+==> Starting Consul agent RPC...
+==> Consul agent running!
+         Node name: 'frankhassanabad'
+        Datacenter: 'dc1'
+            Server: true (bootstrap: true)
+       Client Addr: 127.0.0.1 (HTTP: 8500, HTTPS: -1, DNS: -1, RPC: 8401)
+      Cluster Addr: 192.168.253.10 (LAN: 8304, WAN: 8305)
+    Gossip encrypt: false, RPC-TLS: false, TLS-Incoming: false
+             Atlas: <disabled>
+
+==> Log data will now stream in as it occurs:
+
+    2016/07/24 14:52:51 [INFO] serf: EventMemberJoin: frankhassanabad 192.168.253.10
+    2016/07/24 14:52:51 [INFO] serf: EventMemberJoin: frankhassanabad.dc1 192.168.253.10
+    2016/07/24 14:52:51 [INFO] raft: Node at 192.168.253.10:8303 [Follower] entering Follower state
+    2016/07/24 14:52:51 [INFO] consul: adding LAN server frankhassanabad (Addr: 192.168.253.10:8303) (DC: dc1)
+    2016/07/24 14:52:51 [ERR] agent: failed to sync remote state: No cluster leader
+    2016/07/24 14:52:51 [INFO] consul: adding WAN server frankhassanabad.dc1 (Addr: 192.168.253.10:8303) (DC: dc1)
+    2016/07/24 14:52:52 [WARN] raft: Heartbeat timeout reached, starting election
+    2016/07/24 14:52:52 [INFO] raft: Node at 192.168.253.10:8303 [Candidate] entering Candidate state
+    2016/07/24 14:52:52 [INFO] raft: Election won. Tally: 1
+    2016/07/24 14:52:52 [INFO] raft: Node at 192.168.253.10:8303 [Leader] entering Leader state
+    2016/07/24 14:52:52 [INFO] raft: Disabling EnableSingleNode (bootstrap)
+    2016/07/24 14:52:52 [INFO] consul: cluster leadership acquired
+    2016/07/24 14:52:52 [INFO] consul: member 'frankhassanabad' joined, marking health alive
+    2016/07/24 14:52:52 [INFO] consul: New leader elected: frankhassanabad
+    2016/07/24 14:52:52 [INFO] agent: Synced service 'consul'
+==> Failed to check for updates: Get https://checkpoint-api.hashicorp.com/v1/check/consul?arch=amd64&os=windows&signature=7489f505-62cf-bb57-ad33-d6c27f9b79c7&version=0.6.4: dial tcp: lookup checkpoint-api.hashicorp.com: getaddrinfow: No such host is known.
+    2016/07/24 15:12:25 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 15:12:25 [INFO] raft: Starting snapshot up to 8790
+    2016/07/24 15:12:25 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-8790-1469394745749.tmp
+    2016/07/24 15:12:25 [INFO] raft: Snapshot to 8790 complete
+    2016/07/24 15:29:27 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 15:29:27 [INFO] raft: Starting snapshot up to 17051
+    2016/07/24 15:29:27 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-17051-1469395767713.tmp
+    2016/07/24 15:29:27 [INFO] raft: Compacting logs from 1 to 6811
+    2016/07/24 15:29:27 [INFO] raft: Snapshot to 17051 complete
+    2016/07/24 15:47:23 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 15:47:23 [INFO] raft: Starting snapshot up to 25905
+    2016/07/24 15:47:23 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-25905-1469396843229.tmp
+    2016/07/24 15:47:23 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-8790-1469394745749
+    2016/07/24 15:47:23 [INFO] raft: Compacting logs from 6812 to 15668
+    2016/07/24 15:47:23 [INFO] raft: Snapshot to 25905 complete
+    2016/07/24 16:05:32 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 16:05:32 [INFO] raft: Starting snapshot up to 34658
+    2016/07/24 16:05:32 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-34658-1469397932799.tmp
+    2016/07/24 16:05:33 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-17051-1469395767713
+    2016/07/24 16:05:33 [INFO] raft: Compacting logs from 15669 to 24423
+    2016/07/24 16:05:33 [INFO] raft: Snapshot to 34658 complete
+    2016/07/24 16:24:38 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 16:24:38 [INFO] raft: Starting snapshot up to 44054
+    2016/07/24 16:24:38 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-44054-1469399078712.tmp
+    2016/07/24 16:24:39 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-25905-1469396843229
+    2016/07/24 16:24:39 [INFO] raft: Compacting logs from 24424 to 33822
+    2016/07/24 16:24:39 [INFO] raft: Snapshot to 44054 complete
+    2016/07/24 16:43:14 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 16:43:14 [INFO] raft: Starting snapshot up to 53162
+    2016/07/24 16:43:14 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-53162-1469400194544.tmp
+    2016/07/24 16:43:15 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-34658-1469397932799
+    2016/07/24 16:43:15 [INFO] raft: Compacting logs from 33823 to 42932
+    2016/07/24 16:43:15 [INFO] raft: Snapshot to 53162 complete
+    2016/07/24 17:02:30 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 17:02:30 [INFO] raft: Starting snapshot up to 62583
+    2016/07/24 17:02:30 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-62583-1469401350172.tmp
+    2016/07/24 17:02:30 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-44054-1469399078712
+    2016/07/24 17:02:30 [INFO] raft: Compacting logs from 42933 to 52349
+    2016/07/24 17:02:30 [INFO] raft: Snapshot to 62583 complete
+    2016/07/24 17:19:27 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 17:19:27 [INFO] raft: Starting snapshot up to 70837
+    2016/07/24 17:19:27 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-70837-1469402367050.tmp
+    2016/07/24 17:19:28 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-53162-1469400194544
+    2016/07/24 17:19:28 [INFO] raft: Compacting logs from 52350 to 60606
+    2016/07/24 17:19:28 [INFO] raft: Snapshot to 70837 complete
+    2016/07/24 17:37:11 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 17:37:11 [INFO] raft: Starting snapshot up to 79617
+    2016/07/24 17:37:11 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-79617-1469403431563.tmp
+    2016/07/24 17:37:13 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-62583-1469401350172
+    2016/07/24 17:37:13 [INFO] raft: Compacting logs from 60607 to 69391
+    2016/07/24 17:37:13 [INFO] raft: Snapshot to 79617 complete
+    2016/07/24 17:56:24 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 17:56:24 [INFO] raft: Starting snapshot up to 88693
+    2016/07/24 17:56:24 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-88693-1469404584241.tmp
+    2016/07/24 17:56:25 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-70837-1469402367050
+    2016/07/24 17:56:25 [INFO] raft: Compacting logs from 69392 to 78462
+    2016/07/24 17:56:25 [INFO] raft: Snapshot to 88693 complete
+    2016/07/24 18:15:17 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 18:15:17 [INFO] raft: Starting snapshot up to 97751
+    2016/07/24 18:15:17 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-97751-1469405717937.tmp
+    2016/07/24 18:15:19 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-79617-1469403431563
+    2016/07/24 18:15:19 [INFO] raft: Compacting logs from 78463 to 87523
+    2016/07/24 18:15:19 [INFO] raft: Snapshot to 97751 complete
+    2016/07/24 18:34:43 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 18:34:43 [INFO] raft: Starting snapshot up to 107193
+    2016/07/24 18:34:43 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-107193-1469406883605.tmp
+    2016/07/24 18:34:45 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-88693-1469404584241
+    2016/07/24 18:34:45 [INFO] raft: Compacting logs from 87524 to 96967
+    2016/07/24 18:34:45 [INFO] raft: Snapshot to 107193 complete
+    2016/07/24 18:53:56 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 18:53:56 [INFO] raft: Starting snapshot up to 116495
+    2016/07/24 18:53:56 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-116495-1469408036191.tmp
+    2016/07/24 18:53:58 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-97751-1469405717937
+    2016/07/24 18:53:58 [INFO] raft: Compacting logs from 96968 to 106273
+    2016/07/24 18:53:58 [INFO] raft: Snapshot to 116495 complete
+    2016/07/24 19:10:23 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 19:10:23 [INFO] raft: Starting snapshot up to 126251
+    2016/07/24 19:10:23 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-126251-1469409023948.tmp
+    2016/07/24 19:10:30 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-107193-1469406883605
+    2016/07/24 19:10:30 [INFO] raft: Compacting logs from 106274 to 116070
+    2016/07/24 19:10:30 [INFO] raft: Snapshot to 126251 complete
+    2016/07/24 19:24:50 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 19:24:50 [INFO] raft: Starting snapshot up to 134861
+    2016/07/24 19:24:50 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-134861-1469409890114.tmp
+    2016/07/24 19:24:55 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-116495-1469408036191
+    2016/07/24 19:24:55 [INFO] raft: Compacting logs from 116071 to 124673
+    2016/07/24 19:24:55 [INFO] raft: Snapshot to 134861 complete
+    2016/07/24 19:40:17 [INFO] consul.fsm: snapshot created in 0
+    2016/07/24 19:40:17 [INFO] raft: Starting snapshot up to 144124
+    2016/07/24 19:40:17 [INFO] snapshot: Creating new snapshot at C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-144124-1469410817128.tmp
+    2016/07/24 19:40:22 [INFO] snapshot: reaping snapshot C:\Program Files\Logrhythm\Data Indexer\consul\data\raft\snapshots\1-126251-1469409023948
+    2016/07/24 19:40:22 [INFO] raft: Compacting logs from 124674 to 133941
+    2016/07/24 19:40:22 [INFO] raft: Snapshot to 144124 complete
