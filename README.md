@@ -37,7 +37,7 @@ First errors that show up:
 
 On reboot, database cannot be resized and consul cannot elect a leader.
 
-[consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/consul-firsterrors.log)
+[consul-v0.6.4/soaktest/crashed-instances/consul-1/consul.log](consul-v0.6.4/soaktest/crashed-instances/consul-1/consul.log)
 
 
 ### Potential fix
