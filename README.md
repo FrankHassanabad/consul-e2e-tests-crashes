@@ -4,9 +4,9 @@ Very simple (as simple as I can make) consul end to end tests on various enviorn
 Results and log files are listed here for bug tickets written against Consul.
 
 
-## Test 1
+## Soak Test Windows 2012 R2
 
-Running consul bootstrap mode on Windows 2000 R2 (w2kr2) with a simple curl script which puts random strings into the K/V data store over
+Running consul bootstrap mode on Windows 2012 R2 (w2kr2) with a simple curl script which puts random strings into the K/V data store over
 long periods of time will cause consul to begin giving the errors:
 
 ```
