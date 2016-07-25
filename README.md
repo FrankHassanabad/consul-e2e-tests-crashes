@@ -1,7 +1,8 @@
 # consul-e2e-tests-crashes
 
 Very simple (as simple as I can make) consul end to end tests on various enviornments and any crashes associated with those tests.
-Results and log files are listed here for bug tickets written against Consul. 
+Results and log files are listed here for bug tickets written against Consul.
+
 
 ## Test 1
 
@@ -24,4 +25,16 @@ The test is simply a non-ending loop of:
 curl -X PUT -d '!_RndAlphaNum!' http://localhost:8500/v1/kv/stress/random/!_RndAlphaNum!
 ```
 
+You can run the test batch file at:
+[push-data.bat](consul-v0.6.4/soaktest/push-data.bat)
 
+Log files of the crash are located at:
+
+First errors that show up
+[consul-firsterrors.log](consul-v0.6.4/soaktest/consul-1/conf/consul-firsterrors.log)
+
+On reboot, database cannot be resized
+[consul.log](consul-v0.6.4/soaktest/consul-1/conf/consul.log)
+
+
+### Potential fix
