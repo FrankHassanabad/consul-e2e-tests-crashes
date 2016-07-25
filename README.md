@@ -47,9 +47,11 @@ The root of the issue has been reported here to consul:
 [https://github.com/hashicorp/consul/issues/2203](https://github.com/hashicorp/consul/issues/2203)
 
 And it appears to be from the 3rd party dependency boltdb:
+
 [https://github.com/boltdb/bolt/issues/504](https://github.com/boltdb/bolt/issues/504)
 
 boltdb has been fixed and patched.  I performed an upgrade of consul v0.6.4 with that dependency here:
+
 [https://github.com/FrankHassanabad/consul/tree/v0.6.2-boltdb-upgrade](https://github.com/FrankHassanabad/consul/tree/v0.6.2-boltdb-upgrade)
 
 I re-ran the same tests and consul was able to soak test for 12 hours and did not report resize issues.
