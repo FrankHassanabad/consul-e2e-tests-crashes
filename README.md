@@ -27,7 +27,7 @@ curl -X PUT -d '!_RndAlphaNum!' http://localhost:8500/v1/kv/stress/random/!_RndA
 
 You can see and run the test batch file at:
 
-[consul-v0.6.4/soaktest/push-data.bat](consul-v0.6.4/soaktest/push-data.bat)
+[consul-v0.6.4/soaktest/push-data.bat](consul-v0.6.4/soaktest/push-data.bat#L26)
 
 I ran the above batch file in ~10 simultaneous instances over the period of 5 hours with once shutting down the service overnight.
 
